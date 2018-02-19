@@ -1,0 +1,6 @@
+<table *ngIf="ingredients">
+  <tr *ngFor="let ingredient of ingredients | filterByIngredientCategory: category">
+    <td>{{ingredient.description}}</td>
+    <td><button type="button" (click)="add(ingredient)">Add</button></td>
+  </tr>
+</table>
