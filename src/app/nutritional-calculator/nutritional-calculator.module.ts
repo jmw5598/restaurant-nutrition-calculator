@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
+import { SharedModule } from '../shared/shared.module';
 
 import { NutritionalCalculatorComponent } from './nutritional-calculator.component';
 @NgModule({
   declarations: [
     NutritionalCalculatorComponent
   ],
-  imports: [],
+  imports: [
+    SharedModule
+  ],
   exports: [
     NutritionalCalculatorComponent
   ]
