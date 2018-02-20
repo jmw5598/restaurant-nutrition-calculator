@@ -1,0 +1,70 @@
+.table {
+  width: 100%;
+}
+
+.table tr,
+.table tr td {
+  padding: 0;
+  margin: 0;
+}
+
+.table .table-section {
+  border: 0;
+  color: #cd5c00;
+  font-family: 'Russo One', sans-serif;
+  text-transform: uppercase;
+  border-top: 4px solid #cd5c00;
+  border-bottom: 4px solid #2c2a29;
+}
+
+.table .table-section td {
+  line-height: 24px;
+  font-size: 18px !important;
+  background: #141414 !important;
+}
+
+.table tr {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 1px solid #b5b2a7;
+}
+
+.table-striped tr td:nth-child(even) {
+  background: #f6f1e2;
+}
+
+.table-striped tr td {
+  background: #FFF;
+}
+
+.table tr td {
+  line-height: 48px;
+  height: 48px;
+  padding: 0 8px;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.table tr td:first-child {
+  width: 250px;
+  text-overflow: ellipsis;
+}
+
+.table tr td:not(:first-child) {
+  width: 50px;
+  text-align: center;
+}
+
+.btn {
+  border: 0;
+  outline: 0;
+  line-height: 32px;
+  vertical-align: middle;
+}
+
+.btn-add {
+  font-weight: bold;
+  font-size: 18px;
+  background: transparent;
+}

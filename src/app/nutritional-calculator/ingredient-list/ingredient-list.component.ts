@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 
+import { Alergy } from '../../shared/model/alergy.enum';
 import { NutritionalCalculatorService } from '../../core/service/nutritional-calculator.service';
 import { Ingredient } from '../../shared/model/ingredient.model';
 import { IngredientCategory } from '../../shared/model/ingredient-category.enum';
@@ -10,6 +11,11 @@ import { IngredientCategory } from '../../shared/model/ingredient-category.enum'
   styleUrls: ['./ingredient-list.component.css']
 })
 export class IngredientListComponent {
+
+  alergy = Alergy;
+
+  @Input()
+  title: string;
 
   @Input()
   ingredients: Array<Ingredient>;
