@@ -4,7 +4,10 @@
       <td colspan="15">{{ title }}</td>
     </tr>
     <tr class="table-item" *ngFor="let ingredient of ingredients | filterByIngredientCategory: category">
-      <td>{{ ingredient.description }}</td>
+      <td>
+        {{ ingredient.description }}
+        <span class="serving-size">({{ ingredient.servingSize }} {{ ingredient.servingMetric }})</span>
+      </td>
       <td>{{ ingredient.nutritionalFacts.servingSize }}</td>
       <td>{{ ingredient.nutritionalFacts.caloriesPerServing }}</td>
       <td>{{ ingredient.nutritionalFacts.caloriesFromFat }}</td>
@@ -19,7 +22,7 @@
       <td>{{ ingredient.nutritionalFacts.sugar }}</td>
       <td>{{ ingredient.nutritionalFacts.protein }}</td>
       <td>
-        <button type="button" class="btn btn-add" (click)="add(ingredient)">&#x2b;</button>
+        <span type="button" class="btn btn-add" (click)="add(ingredient)">&#x2b;</span>
       </td>
     </tr>
   </tbody>
