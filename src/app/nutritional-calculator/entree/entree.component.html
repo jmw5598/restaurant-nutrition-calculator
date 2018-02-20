@@ -1,0 +1,13 @@
+<h1 class="entree-title">Your Entree</h1>
+<ul *ngIf="entree.length > 0" class="entree">
+  <li class="entree-item"
+      *ngFor="let item of entree">
+    {{ item.description}}
+    <span class="serving-size">({{ item.servingSize }} {{ item.servingMetric }})</span>
+    <span class="btn-remove" (click)="remove(item)">&times;</span>
+  </li>
+</ul>
+
+<div *ngIf="entree.length === 0" class="entree-empty">
+  Your entree is currently empty.
+</div>
