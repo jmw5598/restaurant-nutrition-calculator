@@ -5,6 +5,7 @@
   top: 0;
   color: #d8cb2f;
   font-family: 'Russo One', sans-serif;
+  z-index: 1;
 }
 
 .navbar-nav {
