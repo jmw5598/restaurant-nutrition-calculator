@@ -10,7 +10,7 @@ export class NutritionalFacts {
     public transFat: number,
     public cholesterol: number,
     public sodium: number,
-    public potasium: number,
+    public potassium: number,
     public totalCarbohydrate: number,
     public dietaryFiber: number,
     public sugar: number,

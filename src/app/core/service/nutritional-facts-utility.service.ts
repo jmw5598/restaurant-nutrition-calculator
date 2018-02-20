@@ -9,7 +9,7 @@ export class NutritionalFactsUtilityService {
     to.caloriesPerServing += item.caloriesPerServing;
     to.cholesterol += item.cholesterol;
     to.dietaryFiber += item.dietaryFiber;
-    to.potasium += item.potasium;
+    to.potassium += item.potassium;
     to.protein += item.protein;
     to.saturatedFat += item.saturatedFat;
     to.servingSize += item.caloriesPerServing;
@@ -26,7 +26,7 @@ export class NutritionalFactsUtilityService {
     from.caloriesPerServing -= item.caloriesPerServing;
     from.cholesterol -= item.cholesterol;
     from.dietaryFiber -= item.dietaryFiber;
-    from.potasium -= item.potasium;
+    from.potassium -= item.potassium;
     from.protein -= item.protein;
     from.saturatedFat -= item.saturatedFat;
     from.servingSize -= item.caloriesPerServing;
