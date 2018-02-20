@@ -19,7 +19,8 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.css",
+        "assets/css/bootstrap-grid-3.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
