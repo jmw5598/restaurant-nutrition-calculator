@@ -11,10 +11,11 @@
 .table .table-section {
   border: 0;
   color: #cd5c00;
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
-  border-top: 4px solid #cd5c00;
-  border-bottom: 4px solid #2c2a29;
+  border-top: 2px solid #cd5c00;
+  border-bottom: 2px solid #2c2a29;
 }
 
 .table .table-section td {
@@ -25,7 +26,6 @@
 
 .table tr {
   font-family: 'Roboto Condensed', sans-serif;
-  font-weight: bold;
   text-transform: uppercase;
   border-bottom: 1px solid #b5b2a7;
 }
@@ -42,7 +42,7 @@
   line-height: 48px;
   height: 48px;
   padding: 0 8px;
-  font-size: 18px;
+  font-size: 16px;
   vertical-align: middle;
 }
 
