@@ -26,7 +26,9 @@
   display: inline;
   float: left;
   font-size: 28px;
-  padding: 0 8px;
+  padding: 0;
+  margin-left: 48px;
+  margin-right: 48px;
   text-transform: uppercase;
 }
 
@@ -37,7 +39,7 @@
 .navbar .navbar-logo {
   line-height: 52px;
   vertical-align: middle;
-  margin: 0 8px;
+  margin: 0;
   height: 36px;
 }
 
