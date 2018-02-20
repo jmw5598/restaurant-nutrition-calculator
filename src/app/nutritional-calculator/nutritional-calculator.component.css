@@ -1,0 +1,24 @@
+.navbar-adjust {
+  margin-top: 48px !important;
+}
+
+.bg-woodgrain {
+  background: url('/assets/images/woodgrain.jpeg') no-repeat center center fixed !important;
+  padding: 32px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.bg-dark {
+  background: #f6f1e2 !important;
+  padding: 32px;
+}
+
+.absolute-right {
+  position: fixed;
+  height: 100%;
+  right: 0;
+  overflow-y: hidden;
+}

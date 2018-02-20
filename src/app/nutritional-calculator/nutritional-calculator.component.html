@@ -1,1 +1,28 @@
-<h1>calculator</h1>
+<div class="container-fluid navbar-adjust">
+  <div class="row">
+
+    <!-- INGREDIENTS -->
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 bg-woodgrain">
+      <div class="">
+        <qdoba-menu
+          [ingredients]="ingredients">
+        </qdoba-menu>
+      </div>
+    </div>
+
+    <!-- BUILT ENTREE -->
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 bg-dark absolute-right">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-8">
+          <qdoba-entree><</qdoba-entree>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+          <qdoba-nutritional-facts></qdoba-nutritional-facts>
+        </div>
+
+      </div>
+    </div>
+  </div>
+<!-- <br />
+-->
+</div>
