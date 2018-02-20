@@ -1,6 +1,8 @@
 export enum IngredientCategory {
-  SHELL = <any>"Shell",
-  TOPPING = <any>"Topping",
+  FILLING = <any>"Filling",
+  MEAT = <any>"Meat",
+  SALSA = <any>"Salsa",
   SAUCE = <any>"Sauce",
-  FILLING = <any>"Filling"
+  TORTILLA = <any>"Tortilla",
+  TOPPING = <any>"Topping",
 }
