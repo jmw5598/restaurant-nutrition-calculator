@@ -77,7 +77,7 @@ new Ingredient(
     [])),
 
 new Ingredient(
-  'Cilantro Lime Dressing (seasonal)', 0.75, 'oz', IngredientCategory.SAUCE,
+  'Cilantro Lime Dressing', 0.75, 'oz', IngredientCategory.SAUCE,
     new NutritionalFacts(21, 50, 45, 5, 1, 0, 0, 180, 20, 2, 0, 2, 0,
     [])),
 
@@ -102,7 +102,7 @@ new Ingredient(
     [Alergy.WHEAT, Alergy.GLUTEN])),
 
 new Ingredient(
-  'Crunchy Flour Tortilla Bowl', 1, 'bowl', IngredientCategory.TORTILLA,
+  'Crunchy Tortilla Bowl', 1, 'bowl', IngredientCategory.TORTILLA,
     new NutritionalFacts(73, 390, 200, 22, 5, 0, 0, 150, 50, 41, 0, 1, 7,
     [Alergy.WHEAT, Alergy.GLUTEN])),
 
@@ -147,7 +147,7 @@ new Ingredient(
     [])),
 
 new Ingredient(
-  'Mango Salsa (seasonal)', 4, 'oz', IngredientCategory.SALSA,
+  'Mango Salsa', 4, 'oz', IngredientCategory.SALSA,
     new NutritionalFacts(113, 60, 0, 0, 0, 0, 0, 180, 0, 14, 2, 9, 1,
     [])),
 
@@ -217,12 +217,12 @@ new Ingredient(
     [Alergy.MILK])),
 
 new Ingredient(
-  'Shrimp Fire Roasted / Glazed', 4, 'piece', IngredientCategory.MEAT,
+  'Shrimp Fire Roasted, Glazed', 4, 'piece', IngredientCategory.MEAT,
     new NutritionalFacts(39, 35, 0, 0, 0, 0, 10, 310, 65, 2, 0, 1, 7,
     [Alergy.FISH, Alergy.CRUSTACEAN_SHELLFISH])),
 
 new Ingredient(
-  'Shrimp Fire Roasted / Glazed', 10, 'piece', IngredientCategory.MEAT,
+  'Shrimp Fire Roasted, Glazed', 10, 'piece', IngredientCategory.MEAT,
     new NutritionalFacts(99, 90, 5, 0.5, 0, 0, 25, 790, 160, 6, 1, 2, 16,
     [Alergy.FISH, Alergy.CRUSTACEAN_SHELLFISH])),
 
