@@ -41,3 +41,9 @@ ul {
   margin-bottom: 8px;
   text-transform: uppercase;
 }
+
+.nutritional-facts-ingredients span {
+  font-size: 10px;
+  font-style: italic;
+  color: #888;
+}

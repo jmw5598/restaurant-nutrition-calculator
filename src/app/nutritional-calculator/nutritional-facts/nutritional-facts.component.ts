@@ -1,21 +1,51 @@
-import { Component, Input } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 
 import { Ingredient } from '../../shared/model/ingredient.model';
 import { NutritionalFacts } from '../../shared/model/nutritional-facts.model';
+import { NutritionalCalculatorService } from '../../core/service/nutritional-calculator.service';
 
 @Component({
   selector: 'qdoba-nutritional-facts',
   templateUrl: './nutritional-facts.component.html',
   styleUrls: ['./nutritional-facts.component.css']
 })
-export class NutritionalFactsComponent {
+export class NutritionalFactsComponent implements OnInit, OnDestroy {
 
-  @Input()
+  subscriptionNutrition;
+  subscriptionEntree;
+
   nutrition: NutritionalFacts;
+  entree: Array<Ingredient>;
 
-  @Input()
-  ingredients: Array<Ingredient>;
+  constructor(
+    private calcService: NutritionalCalculatorService
+  ) {}
 
-  constructor() {}
+  ngOnInit() {
+
+    this.subscriptionNutrition = this.calcService.nutrition
+      .subscribe(
+        data => this.nutrition = data
+      );
+
+    this.subscriptionEntree = this.calcService.entree
+      .subscribe(
+        data => this.entree = data
+      );
+
+  }
+
+  ngOnDestroy() {
+    if(this.subscriptionNutrition)
+      this.subscriptionNutrition.unsubscribe();
+    if(this.subscriptionEntree)
+      this.subscriptionEntree.unsubscribe();
+  }
+
+  private listedIngredients() {
+    const result: Array<string> = new Array<string>();
+    this.entree.forEach((e) => result.push(e.description));
+    return result.join("; ");
+  }
 
 }

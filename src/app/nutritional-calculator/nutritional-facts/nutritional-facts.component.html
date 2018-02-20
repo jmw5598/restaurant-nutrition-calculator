@@ -24,7 +24,7 @@
   </li>
   <li class="nutritional-facts-item">Protein <span>{{ nutrition.protein }}g</span></li>
   <li class="separator"></li>
-  <li class="nutritional-facts-item">INGREDIENTS:
-    <span *ngFor="let ingredient of ingredients">{{ ingredient.description }}</span>
+  <li class="nutritional-facts-ingredients">INGREDIENTS:
+    <span>{{ listedIngredients() }}</span>
   </li>
 </ul>
