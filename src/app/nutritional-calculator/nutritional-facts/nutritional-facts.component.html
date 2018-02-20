@@ -1,0 +1,30 @@
+<ul class="nutritional-facts">
+  <li class="nutritional-facts-heading">Nutrtional Facts</li>
+  <li class="nutritional-facts-item">Serving <span>1 entree</span></li>
+  <li class="separator"></li>
+  <li class="nutritional-facts-item">Amount Per Serving</li>
+  <li class="nutritional-facts-item">Calories <span>{{ nutrition.caloriesPerServing }}</span></li>
+  <li class="blank"><li>
+  <li class="nutritional-facts-item">
+    Total Fat <span>{{ nutrition.totalFat }}g</span>
+    <ul>
+      <li>Saturated Fat <span>{{ nutrition.saturatedFat }}g</span></li>
+      <li>Trans Fat <span>{{ nutrition.transFat }}g</span></li>
+    </ul>
+  </li>
+  <li class="nutritional-facts-item">Cholesterol <span>{{ nutrition.cholesterol }}mg</span></li>
+  <li class="nutritional-facts-item">Sodium <span>{{ nutrition.sodium }}mg</span></li>
+<li class="nutritional-facts-item">Potasium <span>{{ nutrition.potasium }}mg</span></li>
+  <li class="nutritional-facts-item">
+    Total Carbohydrates <span>{{ nutrition.totalCarbohydrate }}g</span>
+    <ul>
+      <li>Dietary Fiber <span>{{ nutrition.dietaryFiber }}g</span></li>
+      <li>Sugar <span>{{ nutrition.sugar }}g</span></li>
+    </ul>
+  </li>
+  <li class="nutritional-facts-item">Protein <span>{{ nutrition.protein }}g</span></li>
+  <li class="separator"></li>
+  <li class="nutritional-facts-item">INGREDIENTS:
+    <span *ngFor="let ingredient of ingredients">{{ ingredient.description }}</span>
+  </li>
+</ul>

@@ -1,0 +1,43 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nutritional-facts {
+  background: #FFF;
+  border: 1px solid #b5b2a7;
+  padding: 16px;
+}
+
+.nutritional-facts li {
+  border-bottom: 1px solid #b5b2a7;
+}
+
+.nutritional-facts .separator {
+  background: #cd5c00;
+  line-height: 4px;
+  height: 4px;
+  border: 0;
+}
+
+.nutritional-facts .blank {
+  line-height: 16px;
+  height: 16px;
+  border: 0;
+}
+
+.nutritional-facts-item li {
+  margin-left: 16px;
+}
+
+.nutritional-facts-item li:last-child {
+  border: 0;
+}
+
+.nutritional-facts .nutritional-facts-heading {
+  font-family: 'Russo One', sans-serif;
+  font-size: 18px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
