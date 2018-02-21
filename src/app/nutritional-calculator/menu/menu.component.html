@@ -1,9 +1,7 @@
 <div class="row" >
   <div class="col-xs-12">
     <table class="table table-striped">
-      <thead>
-        <tr qdoba-menu-heading class="table-heading"></tr>
-      </thead>
+      <thead qdoba-menu-heading></thead>
       <tbody qdoba-ingredient-list *ngFor="let category of ingredientCategory | enumToKeys"
           class="table-item"
           [title]="ingredientCategory[ingredientCategory[category]]"
