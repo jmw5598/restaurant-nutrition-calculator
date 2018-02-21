@@ -1,9 +1,9 @@
 import { Component, Input } from '@angular/core';
 
-import { Alergy } from '../../shared/model/alergy.enum';
-import { NutritionalCalculatorService } from '../../core/service/nutritional-calculator.service';
-import { Ingredient } from '../../shared/model/ingredient.model';
-import { IngredientCategory } from '../../shared/model/ingredient-category.enum';
+import { Alergy } from '../../../shared/model/alergy.enum';
+import { NutritionalCalculatorService } from '../../../core/service/nutritional-calculator.service';
+import { Ingredient } from '../../../shared/model/ingredient.model';
+import { IngredientCategory } from '../../../shared/model/ingredient-category.enum';
 
 @Component({
   selector: '[qdoba-ingredient-list]',
