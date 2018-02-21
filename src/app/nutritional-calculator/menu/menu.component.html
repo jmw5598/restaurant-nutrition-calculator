@@ -1,11 +1,15 @@
-<!-- INGREDIENT LISTs -->
-<!-- Loops through enum after filter and creates a list based on category -->
-<div class="row" *ngFor="let category of ingredientCategory | enumToKeys">
+<div class="row" >
   <div class="col-xs-12">
-    <qdoba-ingredient-list
-      [title]="ingredientCategory[ingredientCategory[category]]"
-      [ingredients]="ingredients"
-      [category]="ingredientCategory[ingredientCategory[category]]">
-    </qdoba-ingredient-list>
+    <table class="table table-striped">
+      <thead>
+        <tr qdoba-menu-heading class="table-heading"></tr>
+      </thead>
+      <tbody qdoba-ingredient-list *ngFor="let category of ingredientCategory | enumToKeys"
+          class="table-item"
+          [title]="ingredientCategory[ingredientCategory[category]]"
+          [ingredients]="ingredients"
+          [category]="ingredientCategory[ingredientCategory[category]]">
+      </tbody>
+    </table>
   </div>
 </div>

@@ -1,0 +1,100 @@
+
+::ng-deep .table {
+  width: 100%;
+}
+
+::ng-deep .table tr,
+::ng-deep .table tr td {
+  padding: 0;
+  margin: 0;
+}
+
+::ng-deep .table .table-section {
+  border: 0;
+  color: #FFF;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+::ng-deep .table .table-section td {
+  line-height: 24px;
+  font-size: 18px !important;
+  background: #2e3436 !important;
+}
+
+::ng-deep .table tr {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+  border-bottom: 1px solid #b5b2a7;
+}
+
+::ng-deep .table-striped tr td:nth-child(even),
+::ng-deep .table-striped tr th:nth-child(even) {
+  background: #f6f1e2;
+}
+
+::ng-deep .table-striped tr td {
+  background: #FFF;
+}
+
+::ng-deep .table tr td {
+  line-height: 48px;
+  height: 48px;
+  padding: 0 8px;
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+::ng-deep .table tr td:first-child {
+  width: 250px;
+  text-overflow: ellipsis;
+}
+
+::ng-deep .table tr td .serving-size {
+  font-size: 10px;
+  color: #888;
+  font-style: italic;
+}
+
+::ng-deep .table tr td:not(:first-child) {
+  width: 50px;
+  text-align: center;
+}
+
+::ng-deep .btn {
+  border: 0;
+  outline: 0;
+  line-height: 32px;
+  vertical-align: middle;
+  font-family: 'Russo One', sans-serif;
+  cursor: pointer;
+}
+
+::ng-deep .btn-add {
+  font-weight: bold;
+  font-size: 18px;
+  background: transparent;
+}
+
+::ng-deep th.rotate {
+  height: 200px;
+  white-space: nowrap;
+}
+
+::ng-deep th.rotate > div {
+  transform:
+    translate(0px, 75px)
+    rotate(270deg);
+  width: 30px;
+  margin: auto;
+}
+
+::ng-deep .table th {
+  background: #FFF;
+}
+
+::ng-deep th:first-child {
+  background: transparent;
+  width: 250px;
+}
