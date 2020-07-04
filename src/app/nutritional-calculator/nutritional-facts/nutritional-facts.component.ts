@@ -42,7 +42,7 @@ export class NutritionalFactsComponent implements OnInit, OnDestroy {
       this.subscriptionEntree.unsubscribe();
   }
 
-  private listedIngredients() {
+  public listedIngredients() {
     const result: Array<string> = new Array<string>();
     this.entree.forEach((e) => result.push(e.description));
     return result.join("; ");
